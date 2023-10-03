@@ -21,9 +21,7 @@ public class EmployeeController {
 
         Employee savedEmployee = service.save(emp);
 
-        return new ResponseEntity<Employee>(savedEmployee, HttpStatus.CREATED);
-
-
+        return new ResponseEntity<Employee>(savedEmployee, HttpStatus.OK);
     }
 
     @GetMapping("/get")
